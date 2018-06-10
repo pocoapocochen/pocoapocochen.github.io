@@ -1,114 +1,173 @@
-<!--
-  -navbar links do not work on mobil :(
-  -mailto does not work :(
--->
-
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Chen Yu-jie's Portfolio</title>
+
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/portfolio_style.css">
+
 </head>
+
 <body>
 
-<!-- BodyWrap -->
-<div class="container-fluid">
+  <!-- bodywrap -->
+  <div class="container-fluid">
 
-<!-- HEADER nav -->
-<header id="header">
+    <!-- header nav -->
+    <header id="header">
  
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <nav class="navbar navbar-expand-md fixed-top navbar-light">
   
-  <!-- brand --> 
-  <a id="brand" class="navbar-brand" href="#top">Yu-jie</a> 
+        <!-- brand --> 
+        <a id="brand" class="navbar-brand" href="#header">Yu-jie</a> 
   
-  <!-- toggler/collapsibe button --> 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+        <!-- toggler/collapsibe button --> 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <!-- navbar links --> 
-  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#about">ABOUT</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#portfolio">PORTFOLIO</a>
-      </li> 
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">CONTACT</a>
-      </li> 
-    </ul>
-  </div> 
+        <!-- navbar links --> 
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </li> 
+          </ul>
+        </div> 
   
-</nav> 
+      </nav> 
   
-</header>
+    </header>
   
   
-<!-- MAIN -->  
-  <main id="main">
+    <!-- main -->  
+    <main id="main">
  
-<!-- ABOUT -->  
-    <section id="about" class="text-center"> 
+      <!-- about -->  
+      <section id="about" class="text-center"> 
        <h1>ABOUT</h1>
+
         <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-4">
-          <img id="myphoto" class="img-fluid rounded-circle" src="https://s17.postimg.cc/ggb1db41r/IMG_2361.jpg" alt="My Photo"></img>
+        <div class="col-md-12">
+          <p id="myintro">Hi, I'm Yu-jie.</p>
+        <!--
+          <img src="" class="rounded-circle" alt="My picture">
+        -->
+          <p id="myintrotext">
+          I'm a self taught front-end developer,<br>
+          learning with freeCodeCamp and Head First book series.<br>
+          It's really exciting to learn diffrent knowledge and skill,<br>
+          since I've graduated with a social science degree.<br>
+          I keep practicing programming skill everyday by Read-Search-Ask method,<br>
+          and hope to create more better projects! 
+           
+          </p>
         </div>
-        <div class="col-md-4 my-auto">
-          <p id="myintro">Hi, I'm Yu-jie, a fresher on the coding road!</p>
         </div>
-        <div class="col-md-2"></div>
-        </div>
-    </section>
+    
+      </section>
         
     
-<!-- PORTFOLIO -->       
-    <section id="portfolio" class="text-center"> 
+      <!-- portfolio -->       
+      <section id="portfolio" class="text-center"> 
       <h1>PORTFOLIO</h1>
+
       <div class="row">
         <div class="col-md-6">
-          <figure>
-          <a href="https://codepen.io/pocoapocochen/full/pVbRBg" target="_blank"><img src="img/random_quote.jpg" class="img-thumbnail" alt="Project: Random Quote Machine" title="1"></a>
-          <figurecaption>Random Quote Machine</figurecaption>
-          </figure>
-        </div>
+          <div class="portfolio_content">
+            <p class="title">Random Quote Machine</p>
+            <ul class="text">
+              <li>To show random quote.</li>
+              <li>If users like the quote, they can tweet it.</li>
+            </ul>
+            <a class="btn" href="https://codepen.io/pocoapocochen/full/pVbRBg" target="_blank">View Live Version</a><br>
+            <a class="btn"  href="https://github.com/pocoapocochen/project-RandomQuoteMachine" target="_blank">View Code</a>
+          </div>
+          </div>
         <div class="col-md-6">
-          <figure>
-          <a href="https://codepen.io/pocoapocochen/full/yjaJRL" target="_blank"><img src="img/local_weather.jpg" class="img-thumbnail" alt="Project: Show the Local Weather" title="Show the Local Weather"></a>
-          <figurecaption>Show the Local Weather</figurecaption>
-          </figure>
+          <div class="portfolio_img">
+          <img src="img/random_quote.png" class="img-thumbnail" alt="Project: Random Quote Machine" title="Random Quote Machine">
+          </div>
         </div>
       </div>
-      
+
       <div class="row">
         <div class="col-md-6">
-          <figure>
-          <a href="https://codepen.io/pocoapocochen/full/RyoxwQ" target="_blank"><img src="img/wiki_viewer.jpg" class="img-thumbnail" alt="Project: Wikipedia Viewer" title="Wikipedia Viewer"></a>
-          <figurecaption>Wikipedia Viewer</figurecaption>
-          </figure>
+          <div class="portfolio_content">
+            <p class="title">Show the Local Weather</p>
+            <ul class="text">
+              <li>To show users' current location and the weather.</li>
+              <li>Users can toggle the temperature between Fahrenheit and Celsius.</li>
+            </ul>
+            <a class="btn" href="https://pocoapocochen.github.io/project-ShowTheLocalWeather/" target="_blank">View Live Version</a><br>
+            <a class="btn" href="https://github.com/pocoapocochen/project-ShowTheLocalWeather" target="_blank">View Code</a>
+          </div>
         </div>
         <div class="col-md-6">
-         <figure>
-         <a href="https://codepen.io/pocoapocochen/full/QrpBgM" target="_blank"><img src="img/twitchtv_list.jpg" class="img-thumbnail" alt="Project: Use the Twitchtv JSON API" title="Use the Twitchtv JSON API"></a>
-          <figurecaption>Use the Twitchtv JSON API</figurecaption>
-          </figure>
+          <div class="portfolio_img">
+          <img src="img/local_weather.png" class="img-thumbnail" alt="Project: Show the Local Weather" title="Show the Local Weather">
+          </div>
+        </div>       
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="portfolio_content">
+            <p class="title">Wikipedia Viewer</p>
+            <ul class="text">
+              <li>To show Wikipedia entries.</li>
+              <li>It shows a random Wikipedia entries by clicking "Surprise Me" button.</li>
+            </ul>
+            <a class="btn" href="https://pocoapocochen.github.io/project-WikipediaViewer/" target="_blank">View Live Version</a><br>
+            <a class="btn" href="https://github.com/pocoapocochen/project-WikipediaViewer" target="_blank">View Code</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="portfolio_img">
+          <img src="img/wiki_viewer.png" class="img-thumbnail" alt="Project: Wikipedia Viewer" title="Wikipedia Viewer">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="portfolio_content">
+            <p class="title">Use the Twitchtv JSON API</p>
+            <ul class="text">
+              <li>To show Twitch.tv channels online status.</li>
+              <li>Users can select channels by status or type.</li>
+            </ul>
+            <a class="btn" href="https://pocoapocochen.github.io/project-UseTheTwitchtvJSONAPI/" target="_blank">View Live Version</a><br>
+            <a class="btn" href="https://github.com/pocoapocochen/project-UseTheTwitchtvJSONAPI" target="_blank">View Code</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="portfolio_img">
+          <img src="img/twitchtv_list.png" class="img-thumbnail" alt="Project: Use the Twitchtv JSON API" title="Use the Twitchtv JSON API">
+          </div>
         </div>
       </div>
     
-    </section>
+      </section>
       
-<!-- CONTACT -->     
-    <section id="contact" class="text-center"> 
+
+      <!-- contact -->     
+      <section id="contact" class="text-center"> 
       <h1>CONTACT</h1>
+      
       <div class="row">
         <div class="col-md-12">
            <p id="mymessage">Please feel free to contact me and give your feedback, thank you!</p>
@@ -117,28 +176,31 @@
        <div class="row">
          <div class="col-md-12">
            <div id="socialmedia">
+            <a href="mailto:pocoapoco.chen@gmail.com" target="_blank" alt="mail icon" title="mail"><i id="mailicon" class="fa fa-envelope fa-2x socialicon"></i></a>              
             <a href="#contact"><i id="inicon" class="fa fa-linkedin fa-2x socialicon"></i></a>
-            <a href="https://github.com/pocoapocochen" target="_new" alt="gitHub icon"><i id="giticon" class="fa fa-github fa-2x socialicon"></i></a>
-             <a href="https://www.freecodecamp.org/portfolio/pocoapocochen" target="_new" alt="freeCodeCamp icon"><i id="campicon" class="fa fa-free-code-camp fa-2x socialicon"></i></a>
-             <a href="https://codepen.io/pocoapocochen/" target="_new" alt="CodePen icon"><i id="penicon" class="fa fa-codepen fa-2x socialicon"></i></a>
-            <a href="mailto:pocoapoco.chen@gmail.com" alt="mail icon"><i id="mailicon" class="fa fa-envelope fa-2x socialicon"></i></a>     
+            <a href="https://github.com/pocoapocochen" target="_new" alt="GitHub icon" title="GitHub"><i id="giticon" class="fa fa-github fa-2x socialicon"></i></a>
+             <a href="https://www.freecodecamp.org/portfolio/pocoapocochen" target="_new" alt="freeCodeCamp icon" title="freeCodeCamp"><i id="campicon" class="fa fa-free-code-camp fa-2x socialicon"></i></a>
+             <a href="https://codepen.io/pocoapocochen/" target="_new" alt="CodePen icon" title="CodePen"><i id="penicon" class="fa fa-codepen fa-2x socialicon"></i></a>
            </div>
         </div>
       </div>
-    </section>
     
-  </main>
- 
-<!-- FOOTER -->   
-  <footer id="footer" class="text-center"> 
-    <p id="copyright">Copyright &copy; 2018 Chen Yu-jie. All Right Reserved.</p>
-  </footer>
+      </section>
+    
+    </main>
 
-</div>
+    <!-- footer -->   
+    <footer id="footer" class="text-center"> 
+      <p id="copyright">Copyright &copy; 2018 Chen Yu-jie. All Right Reserved.</p>
+    </footer>
+
+  </div>
 
 
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="js/portfolio_script.js"></script>
+
 </body>
 </html>

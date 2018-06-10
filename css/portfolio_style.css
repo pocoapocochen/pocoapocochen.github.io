@@ -1,80 +1,88 @@
+/*common layout related*/
 
-/*backgound*/
-.container-fluid{
+html, body, .container-fluid {
   margin: 0;
   padding: 0;
+  background: #ebfafa;
+}
+
+#about, #portfolio, #contact {
+  padding: 5rem 0;
 }
 
 #about, #contact {
-  background: #f2f2f2; 
-  height: 100%;
+  background: #d6f5f5;
 }
 
-#portfolio {
-  color: white;
-  background: #737373;
-  height: 100%;
+nav, #portfolio, #footer {
+  background: #ebfafa;
 }
 
-h1 {
-  font-family: Impact, Charcoal, sans-serif;
-  font-size: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-#myintro, #mymessage {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 25px;
-}
-
-figurecaption, .navbar-brand, .nav-link, {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/*HEADER nav*/
-
-
-
-/*ABOUT*/
-#myphoto {
-  width: 250px;
-  height: 250px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+.col-md-12 { /* #myintro, #mymessage */
+  padding: 0 1.875rem;
 }
 
 
-/*PORTFOLIO*/
-.row {
-  margin-left: 10px;
-  margin-right: 10px;
+/*portfolio*/
+#portfolio .row { 
+  height: 100%; /* to set .col-md-6 vertical align*/
+  margin-bottom: 2.5rem;
 }
 
-.img-thumbnail{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
+.col-md-6 { /* .portfolio_content, .portfolio_img */
+  margin: auto; /* to set .col-md-6 vertical align*/
 }
 
-figurecaption{
-  text-align: center;
-  margin-bottom: 15px;
+.portfolio_content, .portfolio_img {
+  padding: 0 1.875rem;
 }
 
-/*CONTACT*/
-.socialicon {
+.text {
+  padding-left: 0;
+  padding-right: 0;
+  list-style-position: inside;
+}
+
+.btn {
+  width: 10rem;
+  height: 2.5rem;
+  vertical-align: middle;
+  margin-bottom: 0.625rem;
+  text-decoration: none;
+  outline: none;
+  color: #1f7a7a;
+  border: 0.125rem #1f7a7a solid;
+  border-radius: 0.25rem;
+  -webkit-transition-duration: 0.2s; 
+  transition-duration: 0.2s;
+}
+
+.btn:hover {
   color: #000000;
-  padding: 10px;
+}
+
+.img-thumbnail { /* remove .img-thumbnail original border */
+  padding: 0;
+  border: none;
+}
+
+
+/*contact*/
+.socialicon {
+  color: #555555;
+  padding: 0.625rem;
 }
 
 .socialicon:hover {
   transform: scale(1.2);
 }
 
-#inicon{
-  display: none; /*待解除*/
+#inicon{ /*待解除*/
+  display: none; 
+}
+
+#mailicon:hover{
+  color: #ea4335;
 }
 
 /*#inicon:hover{
@@ -82,7 +90,7 @@ figurecaption{
 }*/
 
 #giticon:hover{
-  color: #333;
+  color: #333333;
 }
 
 #campicon:hover{
@@ -90,20 +98,56 @@ figurecaption{
 }
 
 #penicon:hover{
-  color: #333;
+  color: #333333;
 }
 
-#mailicon:hover{
-  color: #ea4335;
-}
 
-/*FOOTER*/
+/*footer*/
 #footer {
-  color: white;
-  background: #3e3e3e;
   height: 100%;
 }
 
 #copyright {
-  padding-top: 10px;
+  padding-top: 0.625rem;
 }
+
+
+/*just font-related*/
+body {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+h1, #myintrotext, .text {
+  color: #000000;
+}
+
+#myintro, #mymessage, .title {
+  color: #555555;
+}
+
+h1 {
+  font-size: 3rem;
+  padding-bottom: 2.5rem;
+}
+
+
+#myintro {
+  font-size: 2rem;
+}
+
+.title, #mymessage {
+  font-size: 1.5rem;
+}
+
+.text {
+  font-size: 1.25rem;  
+}
+
+#myintrotext {
+  font-size: 1.125rem;
+}
+
+#myintro, .title, .btn {
+  font-weight: bold;
+}
+
