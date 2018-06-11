@@ -1,13 +1,16 @@
 /*common layout related*/
 
-html, body, .container-fluid {
+html, body, .container-fluid, .row {
   margin: 0;
   padding: 0;
-  background: #ebfafa;
 }
 
 #about, #portfolio, #contact {
   padding: 5rem 0;
+}
+
+#myintro, #myintrotext, #mymessage, .portfolio_content, .portfolio_img { 
+  padding: 0 1.875rem;
 }
 
 #about, #contact {
@@ -18,23 +21,15 @@ nav, #portfolio, #footer {
   background: #ebfafa;
 }
 
-.col-md-12 { /* #myintro, #mymessage */
-  padding: 0 1.875rem;
-}
-
 
 /*portfolio*/
 #portfolio .row { 
   height: 100%; /* to set .col-md-6 vertical align*/
-  margin-bottom: 2.5rem;
+  margin-bottom: 3.125rem;
 }
 
-.col-md-6 { /* .portfolio_content, .portfolio_img */
+.col-md-6 { 
   margin: auto; /* to set .col-md-6 vertical align*/
-}
-
-.portfolio_content, .portfolio_img {
-  padding: 0 1.875rem;
 }
 
 .text {
@@ -129,7 +124,6 @@ h1 {
   font-size: 3rem;
   padding-bottom: 2.5rem;
 }
-
 
 #myintro {
   font-size: 2rem;
