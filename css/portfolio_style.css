@@ -112,7 +112,7 @@ body {
   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
 }
 
-.sectionname, #myintrotext, .text {
+h2, #myintrotext, .text {
   color: #000000;
 }
 
@@ -120,7 +120,7 @@ body {
   color: #555555;
 }
 
-.sectionname {
+h2 {
   font-size: 3rem;
   padding-bottom: 2.5rem;
 }
@@ -141,7 +141,7 @@ body {
   font-size: 1.125rem;
 }
 
-.sectionname, #myintro, .title, .btn {
+#myintro, .title, .btn {
   font-weight: bold;
 }
 
