@@ -147,3 +147,22 @@ h2 {
   font-weight: bold;
 }
 
+
+@media (max-width: 26.25rem) {
+  h2 {
+  font-size: 2.75rem;
+  }
+
+  #myintro {
+    font-size: 1.75rem;
+  }
+
+  .title, #mymessage {
+    font-size: 1.25rem;
+  }
+
+  #myintrotext, .text {
+    font-size: 1rem;  
+  }
+
+}
