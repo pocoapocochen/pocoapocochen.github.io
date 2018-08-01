@@ -32,6 +32,11 @@ nav, #portfolio, #footer {
   margin: auto; /* to set .col-md-6 vertical align*/
 }
 
+.portfolio_content, .portfolio_img {
+  width: 90%;
+  margin: auto;
+}
+
 .text {
   padding-left: 0;
   padding-right: 0;
@@ -133,13 +138,10 @@ h2 {
   font-size: 1.5rem;
 }
 
-.text {
+#myintrotext, .text {
   font-size: 1.25rem;  
 }
 
-#myintrotext {
-  font-size: 1.125rem;
-}
 
 #myintro, .title, .btn {
   font-weight: bold;
