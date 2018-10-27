@@ -61,9 +61,9 @@ nav, #portfolio, #footer {
   color: #000000;
 }
 
-.img-thumbnail { /* remove .img-thumbnail original border */
+.img-thumbnail {
   padding: 0;
-  border: none;
+  border: 0.0625rem #8c8c8c solid;
 }
 
 
