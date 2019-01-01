@@ -1,271 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Chen Yu-jie's Portfolio</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/githubmainpage_style.css">
-</head>
+  <head>
 
-<body>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- bodywrap -->
-  <div class="container-fluid">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
 
-    <!-- header nav -->
-    <header id="header">
- 
-      <nav class="navbar navbar-expand-md fixed-top navbar-light">
-  
-        <!-- brand --> 
-        <a id="brand" class="navbar-brand" href="#header">Yu-jie</a> 
-  
-        <!-- toggler/collapsibe button --> 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="main.css">
+    
+    <title>Chen Yu-jie's Portfolio</title>
+
+  </head>
+
+  <body>
+
+    <!-- Navbar -->
+    <nav id="mainNavbar" class="navbar navbar-expand-md navbar-light fixed-top">
+        <a class="navbar-brand smooth" href="#">Yu-jie</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainLinks" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-
-        <!-- navbar links --> 
-        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">ABOUT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">PORTFOLIO</a>
-            </li> 
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">CONTACT</a>
-            </li> 
-          </ul>
-        </div> 
-  
-      </nav> 
-  
-    </header>
-  
-  
-    <!-- main -->  
-    <main id="main">
- 
-      <!-- about -->  
-      <section id="about" class="text-center"> 
-       <h2>ABOUT</h2>
-
-        <div class="row">
-          <div class="col-md-12">
-            <p id="myintro">Hi, I'm Yu-jie.</p>
-            <!--
-            <img src="" class="rounded-circle" alt="My picture">
-            -->
-          </div>
+        <div class="collapse navbar-collapse" id="mainLinks">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link smooth" href="#about">About</a>
+                <a class="nav-item nav-link smooth" href="#portfolio">Portfolio</a>
+                <a class="nav-item nav-link smooth" href="#contact">Contact</a>
+            </div>
         </div>
+    </nav>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container text-center">
+        <h1 class="display-4 mb-4">ABOUT</h1>
+        <h3 class="mb-3">Hi, I'm Yu-jie :)</h3>
         <div class="row">
-          <div class="col-md-3"></div>
-          <div class="col-md-6">
-            <p id="myintrotext">
-            I'm a self taught front-end developer, learning with freeCodeCamp, Udemy and Head First book series. It's really exciting to learn diffrent knowledge and skill since I've graduated with a social science degree. I keep practicing programming skill everyday by Read-Search-Ask method and hope to create more better projects! 
+          <div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+            <p>
+            I'm a self taught front-end developer, learning with freeCodeCamp, Udemy and Head First book series. It's really exciting to learn diffrent knowledge and skill since I've graduated with a social science degree. I keep practicing programming skill everyday by Read-Search-Ask method and hope to create more better projects!
             </p>
           </div>
-          <div class="col-md-3"></div>
         </div>
+      </div>
+    </section>
     
-      </section>
+    <!-- Portfolio -->
+    <section id="portfolio">
+      <div class="container text-center">
+        <h1 class="display-4 mb-4">PORTFOLIO</h1>
+
+        <!--project 1-->
+        <div class="row align-items-center my-5">
+          <div class="col-md-6 order-2 order-md-1">
+            <img src="img/markdown_previewer.png" class="img-fluid mt-3" alt="Project: Markdown Previewer" title="Markdown Previewer">
+          </div>
+          <div class="col-md-6 order-1 order-md-2">
+            <div class="row">
+              <div class="col col-sm-10 offset-sm-1">
+                <h3 class="mb-3">Markdown Previewer</h3>
+                  <ul class="text-left">
+                    <li class="mt-2">Users can type code and the previewer field will updated to display the content.</li>
+                    <li class="mt-2">Users can use Markdown.</li>
+                    <li class="font-weight-bold mt-2">React, SCSS, RWD</li>
+                  </ul>
+                  <a class="btn btn-outline-info my-1" href="https://pocoapocochen.github.io/project-MarkdownPreviewer/" target="_blank">View Live Version</a><br>
+                  <a class="btn btn-outline-info my-1" href="https://github.com/pocoapocochen/project-MarkdownPreviewer" target="_blank">View Code</a>
+              </div>
+            </div>    
+          </div>
+        </div>
+
+        <!--project 2-->
+        <div class="row align-items-center my-5">
+          <div class="col-md-6 order-2 order-md-2">
+            <img src="img/enjoy_the_yummy.png" class="img-fluid mt-3" alt="Project: Enjoy The Yummy" title="Enjoy The Yummy">
+          </div>
+          <div class="col-md-6 order-1 order-md-1">
+            <div class="row">
+              <div class="col col-sm-10 offset-sm-1">
+                <h3 class="mb-3">Enjoy The Yummy</h3>
+                  <ul class="text-left">
+                    <li class="mt-2">Users can search for recipes by ingredient.</li>
+                    <li class="mt-2">Users can see diffrent pages of results.</li>
+                    <li class="font-weight-bold mt-2">Using API, JavaScript, CSS, RWD</li>
+                  </ul>
+                  <a class="btn btn-outline-info my-1" href="https://pocoapocochen.github.io/project-EnjoyTheYummy/" target="_blank">View Live Version</a><br>
+                  <a class="btn btn-outline-info my-1" href="https://github.com/pocoapocochen/project-EnjoyTheYummy" target="_blank">View Code</a>
+              </div>
+            </div>    
+          </div>
+        </div>
+
+        <!--project 3-->
+        <div class="row align-items-center my-5">
+          <div class="col-md-6 order-2 order-md-1">
+            <img src="img/with_bloom.png" class="img-fluid mt-3" alt="Project: With Bloom" title="With Bloom">
+          </div>
+          <div class="col-md-6 order-1 order-md-2">
+            <div class="row">
+              <div class="col col-sm-10 offset-sm-1">
+                <h3 class="mb-3">With Bloom</h3>
+                  <ul class="text-left">
+                    <li class="mt-2">User can browse product service.</li>
+                    <li class="mt-2">Users can see local weather and random pictures.</li>
+                    <li class="font-weight-bold mt-2">Using API, jQuery, SCSS, Bootstrap, RWD</li>
+                  </ul>
+                  <a class="btn btn-outline-info my-1" href="https://pocoapocochen.github.io/project-WithBloom/" target="_blank">View Live Version</a><br>
+                  <a class="btn btn-outline-info my-1" href="https://github.com/pocoapocochen/project-WithBloom" target="_blank">View Code</a>
+              </div>
+            </div>    
+          </div>
+        </div>
         
-    
-      <!-- portfolio -->       
-      <section id="portfolio" class="text-center"> 
-      <h2>PORTFOLIO</h2>
-
-      <!--project 1-->
-      <div class="row">
-        <div class="col-md-6">
-          <div class="portfolio_content">
-            <p class="title">Markdown Previewer</p>
-            <ul class="text">
-              <li>Users can type code and the previewer field will updated to display the content.</li>
-              <li>Users can use Markdown.</li>
-              <li>Using React, Sass(SCSS)</li>
-            </ul>
-            <a class="btn" href="https://pocoapocochen.github.io/project-MarkdownPreviewer/" target="_blank">View Live Version</a><br>
-            <a class="btn" href="https://github.com/pocoapocochen/project-MarkdownPreviewer" target="_blank">View Code</a>
+        <!--project 4-->
+        <div class="row align-items-center my-5">
+          <div class="col-md-6 order-2 order-md-2">
+            <img src="img/twitchtv_list.png" class="img-fluid mt-3" alt="Project: Twitch Stream List" title="Twitch Stream List">
+          </div>
+          <div class="col-md-6 order-1 order-md-1">
+            <div class="row">
+              <div class="col col-sm-10 offset-sm-1">
+                <h3 class="mb-3">Twitch Stream List</h3>
+                  <ul class="text-left">
+                    <li class="mt-2">To show Twitch.tv channels online status.</li>
+                    <li class="mt-2">Users can select channels by status or type.</li>
+                    <li class="font-weight-bold mt-2">Using API, jQuery, CSS, RWD</li>
+                  </ul>
+                  <a class="btn btn-outline-info my-1" href="https://pocoapocochen.github.io/project-TwitchStreamList/" target="_blank">View Live Version</a><br>
+                  <a class="btn btn-outline-info my-1" href="https://github.com/pocoapocochen/project-TwitchStreamList" target="_blank">View Code</a>
+              </div>
+            </div>    
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="portfolio_img">
-          <img src="img/markdown_previewer.png" class="img-thumbnail" alt="Project: Markdown Previewer" title="Markdown Previewer">
+
+        <!--project 5-->
+        <div class="row align-items-center my-5">
+          <div class="col-md-6 order-2 order-md-1">
+            <img src="img/landing_page.png" class="img-fluid mt-3" alt="Project: Product Landing Page" title="Product Landing Page">
+          </div>
+          <div class="col-md-6 order-1 order-md-1">
+            <div class="row">
+              <div class="col col-sm-10 offset-sm-1">
+                <h3 class="mb-3">Product Landing Page</h3>
+                  <ul class="text-left">
+                    <li class="mt-2">To display the product information.</li>
+                    <li class="mt-2">Users can watch an embedded product video.</li>
+                    <li class="font-weight-bold mt-2">CSS, RWD</li>
+                  </ul>
+                  <a class="btn btn-outline-info my-1" href="https://pocoapocochen.github.io/project-ProductLandingPage/" target="_blank">View Live Version</a><br>
+                  <a class="btn btn-outline-info my-1" href="https://github.com/pocoapocochen/project-ProductLandingPage" target="_blank">View Code</a>
+              </div>
+            </div>    
+          </div>
+        </div>
+
+        <!--project 6-->
+        <div class="row align-items-center my-5">
+          <div class="col-md-6 order-2 order-md-2">
+            <img src="img/survey_form.png" class="img-fluid mt-3" alt="Project: Survey Form" title="Survey Form">
+          </div>
+          <div class="col-md-6 order-1 order-md-1">
+            <div class="row">
+              <div class="col col-sm-10 offset-sm-1">
+                <h3 class="mb-3">Survey Form</h3>
+                  <ul class="text-left">
+                    <li class="mt-2">To display diffrent types of survey questions.</li>
+                    <li class="mt-2">There are user interaction design.</li>
+                    <li class="font-weight-bold mt-2">CSS, RWD</li>
+                  </ul>
+                  <a class="btn btn-outline-info my-1" href="https://pocoapocochen.github.io/project-SurveyForm/" target="_blank">View Live Version</a><br>
+                  <a class="btn btn-outline-info my-1" href="https://github.com/pocoapocochen/project-SurveyForm" target="_blank">View Code</a>
+              </div>
+            </div>    
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!--Contact-->
+    <section id="contact">
+      <div class="container text-center">
+        <h1 class="display-4 mb-4">CONTACT</h1>
+        <p class="lead mb-4">Please feel free to contact me and give your feedback, thank you!</p>
+        <div class="row">
+          <div class="col">
+            <div id="socialmedia">
+              <a href="mailto:pocoapoco.chen@gmail.com" target="_blank" alt="Email icon" title="Email" class="mx-3"><i id="mailicon" class="fa fa-envelope fa-2x socialicon"></i></a>
+              <a href="https://github.com/pocoapocochen" target="_new" alt="GitHub icon" title="GitHub" class="mx-3"><i id="giticon" class="fab fa-github fa-2x socialicon"></i></a>
+              <!-- <a href="#" class="mx-3"><i id="penicon" class="fab fa-codepen fa-2x socialicon"></i></a>
+              <a href="#" class="mx-2"><i id="inicon" class="fab fa-linkedin fa-2x socialicon"></i></a> -->
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!--project 2-->
-      <div class="row">
-        <div class="col-md-6">
-          <div class="portfolio_content">
-            <p class="title">Monthly Budgety</p>
-            <ul class="text">
-              <li>Users can enter/delete income and expense item.</li>
-              <li>Users can see the item list and the total budget.</li>
-              <li>Using Pure JavaScript(MVC pattern)</li>
-            </ul>
-            <a class="btn" href="https://pocoapocochen.github.io/project-MonthlyBudget/" target="_blank">View Live Version</a><br>
-            <a class="btn" href="https://github.com/pocoapocochen/project-MonthlyBudget" target="_blank">View Code</a>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="portfolio_img">
-          <img src="img/monthly_budget.png" class="img-thumbnail" alt="Project: Monthly Budgety" title="Monthly Budgety">
-          </div>
-        </div>
-      </div>
+    <!--Footer-->
+    <section id="footer" class="text-center text-dark text-monospace py-3">
+      <p class="mb-0">Copyright &copy; 2019 Chen Yu-jie. All Right Reserved.</p>
+    </section>
 
-      <!--project 3-->
-      <div class="row">
-        <div class="col-md-6">
-          <div class="portfolio_content">
-            <p class="title">Twitch Stream List</p>
-            <ul class="text">
-              <li>To show Twitch.tv channels online status.</li>
-              <li>Users can select channels by status or type.</li>
-              <li>Using API, jQuery, RWD(Flexbox)</li>
-            </ul>
-            <a class="btn" href="https://pocoapocochen.github.io/project-TwitchStreamList/" target="_blank">View Live Version</a><br>
-            <a class="btn" href="https://github.com/pocoapocochen/project-TwitchStreamList" target="_blank">View Code</a>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="portfolio_img">
-          <img src="img/twitchtv_list.png" class="img-thumbnail" alt="Project: Twitch Stream List" title="Twitch Stream List">
-          </div>
-        </div>
-      </div>
 
-      <!--project 4-->
-      <div class="row">
-        <div class="col-md-6">
-          <div class="portfolio_content">
-            <p class="title">The Local Weather</p>
-            <ul class="text">
-              <li>To show users' current location and the weather.</li>
-              <li>Users can toggle the temperature between Fahrenheit and Celsius.</li>
-              <li>Using API, jQuery</li>
-            </ul>
-            <a class="btn" href="https://pocoapocochen.github.io/project-TheLocalWeather/" target="_blank">View Live Version</a><br>
-            <a class="btn" href="https://github.com/pocoapocochen/project-TheLocalWeather" target="_blank">View Code</a>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="portfolio_img">
-          <img src="img/local_weather.png" class="img-thumbnail" alt="Project: The Local Weather" title="The Local Weather">
-          </div>
-        </div>       
-      </div>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+  <!-- Custom JS -->
+  <script src="main.js"></script>
 
-      <!--project 5-->
-      <div class="row">
-        <div class="col-md-6">
-          <div class="portfolio_content">
-            <p class="title">Wikipedia Viewer</p>
-            <ul class="text">
-              <li>To show Wikipedia entries.</li>
-              <li>It shows a random Wikipedia entries by clicking "Surprise Me" button.</li>
-              <li>Using API, jQuery, RWD(Flexbox)</li>
-            </ul>
-            <a class="btn" href="https://pocoapocochen.github.io/project-WikipediaViewer/" target="_blank">View Live Version</a><br>
-            <a class="btn" href="https://github.com/pocoapocochen/project-WikipediaViewer" target="_blank">View Code</a>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="portfolio_img">
-          <img src="img/wiki_viewer.png" class="img-thumbnail" alt="Project: Wikipedia Viewer" title="Wikipedia Viewer">
-          </div>
-        </div>
-      </div>
-
-      <!--project 6-->
-      <div class="row">
-        <div class="col-md-6">
-          <div class="portfolio_content">
-            <p class="title">Product Landing Page</p>
-            <ul class="text">
-              <li>To display the product information.</li>
-              <li>Users can watch an embedded product video.</li>
-              <li>Using RWD(Flexbox), CSS, HTML</li>
-            </ul>
-            <a class="btn" href="https://pocoapocochen.github.io/project-ProductLandingPage" target="_blank">View Live Version</a><br>
-            <a class="btn"  href="https://github.com/pocoapocochen/project-ProductLandingPage" target="_blank">View Code</a>
-          </div>
-          </div>
-        <div class="col-md-6">
-          <div class="portfolio_img">
-          <img src="img/landing_page.png" class="img-thumbnail" alt="Project: Product Landing Page" title="Product Landing Page">
-          </div>
-        </div>
-      </div>
-
-      <!--project 7-->
-      <div class="row">
-        <div class="col-md-6">
-          <div class="portfolio_content">
-            <p class="title">Survey Form</p>
-            <ul class="text">
-              <li>To display diffrent types of survey questions.</li>
-              <li>There are user interaction design.</li>
-              <li>Using RWD(Flexbox), CSS, HTML</li>
-            </ul>
-            <a class="btn" href="https://pocoapocochen.github.io/project-SurveyForm" target="_blank">View Live Version</a><br>
-            <a class="btn"  href="https://github.com/pocoapocochen/project-SurveyForm" target="_blank">View Code</a>
-          </div>
-          </div>
-        <div class="col-md-6">
-          <div class="portfolio_img">
-          <img src="img/survey_form.png" class="img-thumbnail" alt="Project: Survey Form" title="Survey Form">
-          </div>
-        </div>
-      </div>
-    
-      </section>
-      
-
-      <!-- contact -->     
-      <section id="contact" class="text-center"> 
-      <h2>CONTACT</h2>
-      
-      <div class="row">
-        <div class="col-md-12">
-           <p id="mymessage">Please feel free to contact me and give your feedback, thank you!</p>
-        </div>
-       </div>
-       <div class="row">
-         <div class="col-md-12">
-           <div id="socialmedia">
-            <a href="mailto:pocoapoco.chen@gmail.com" target="_blank" alt="mail icon" title="mail"><i id="mailicon" class="fa fa-envelope fa-2x socialicon"></i></a>              
-            <a href="#contact"><i id="inicon" class="fa fa-linkedin fa-2x socialicon"></i></a>
-            <a href="https://github.com/pocoapocochen" target="_new" alt="GitHub icon" title="GitHub"><i id="giticon" class="fa fa-github fa-2x socialicon"></i></a>
-            <a href="https://codepen.io/pocoapocochen/pens/public/" target="_new" alt="CodePen icon" title="CodePen"><i id="penicon" class="fa fa-codepen fa-2x socialicon"></i></a>
-            <a href="https://www.freecodecamp.org/portfolio/pocoapocochen" target="_new" alt="freeCodeCamp icon" title="freeCodeCamp"><i id="campicon" class="fa fa-free-code-camp fa-2x socialicon"></i></a>
-           </div>
-        </div>
-      </div>
-    
-      </section>
-    
-    </main>
-
-    <!-- footer -->   
-    <footer id="footer" class="text-center"> 
-      <p id="copyright">Copyright &copy; 2018 Chen Yu-jie. All Right Reserved.</p>
-    </footer>
-
-  </div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-  <script src="js/githubmainpage_script.js"></script>
-
-</body>
+  </body>
 </html>
